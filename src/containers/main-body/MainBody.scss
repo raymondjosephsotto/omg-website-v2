@@ -1,0 +1,122 @@
+/* Import Prefabricated Styles*/
+@import "../../components/prefab-styles/PrefabStyles.scss";
+
+.main-body {
+  background: #f7f7f7;
+  &-bg-wrapper {
+    min-height: 120vh;
+    background: url("../../assets/body_bubble_left.png"),
+      url("../../assets/body_bubble_right.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0 50%, 100% 80%;
+  }
+  .card-container {
+    position: relative;
+    bottom: 12.5vh;
+    .card {
+      cursor: pointer;
+      background: #fff;
+      max-width: 308px;
+      width: 100%;
+      height: 361px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1rem;
+      padding: 71px 58px 57px 57px;
+      border-radius: 20px;
+      box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+      border-radius: 50px;
+      moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+
+      @include buttonHover;
+
+      &:hover {
+        background: #a1ffce; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #faffd1,
+          #a1ffce
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #faffd1,
+          #a1ffce
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        background-position: 100% 0;
+        moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+      }
+    }
+    .image img {
+      display: block;
+      margin: 1.25rem auto;
+      width: 100%;
+      max-width: 110px;
+      height: auto;
+    }
+    .content {
+      text-align: center;
+      h5,
+      h6 {
+        letter-spacing: -0.63px;
+        text-align: center;
+        color: #4262ac;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .main-content {
+    .content-container {
+      max-width: 395px;
+      .heading h3 {
+        font-size: 34px;
+        font-weight: bold;
+        color: #3e3f40;
+      }
+      .paragraph p {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.33;
+        letter-spacing: -0.45px;
+        color: #010101;
+      }
+    }
+  }
+
+  .bottom-content {
+    background: url("../../assets/bottom_bg.png") no-repeat top center;
+    background-size: cover;
+    min-height: 40vh;
+    text-align: center;
+    .heading p {
+      font-size: 26px;
+      font-weight: 300;
+      letter-spacing: 0.26px;
+      color: #fff;
+    }
+    .button-container {
+      a {
+        background-color: #4262ac;
+        border: 1px solid #fff;
+        border-radius: 50px;
+        padding: 0.6rem 1.5rem 0.7rem;
+        font-size: 16px;
+        font-weight: 300;
+        text-decoration: none;
+        color: #fff;
+        @include buttonHover();
+      }
+    }
+  }
+}

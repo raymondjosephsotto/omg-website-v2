@@ -1,0 +1,46 @@
+/* Import Prefabricated Styles*/
+@import "../../components/prefab-styles/PrefabStyles.scss";
+
+.footer {
+  background-color: #293e66;
+
+  .social-icons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    a {
+      margin: 5px;
+      
+    }
+    img {
+      width: 33px;
+      height: 33px;
+      display: block;
+      margin: auto;
+      @include buttonHover;
+    }
+  }
+
+  .disclaimer p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.94;
+    text-align: center;
+    color: #fff;
+  }
+
+  .bottom-links {
+    text-align: center;
+    ul {
+      list-style: none;
+    }
+    li a {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: #fff;
+      text-decoration: none;
+      margin-right: 2rem;
+    }
+  }
+}

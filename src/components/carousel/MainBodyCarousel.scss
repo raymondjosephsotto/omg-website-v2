@@ -1,0 +1,20 @@
+.main-body-carousel {
+  max-width: 522px;
+  background: url("../../assets/brand_bg.png");
+  background-size: cover;
+  .brand-container {
+    height: 279px;
+    padding:1.5rem ;
+    .paragraph{
+        max-width: 272px;;
+    }
+  }
+  .brand-image img {
+   display: block;
+   margin: auto;
+  }
+  .slick-dots {
+    text-align: center;
+    bottom: 20px !important;
+  }
+}
