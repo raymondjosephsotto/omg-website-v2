@@ -22,6 +22,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       margin: 1rem;
       padding: 71px 58px 57px 57px;
       border-radius: 20px;
@@ -30,7 +31,6 @@
         0 22.3px 17.9px rgba(0, 0, 0, 0.072),
         0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
       border-radius: 50px;
-      moz-transition: all 0.4s ease-in-out;
       -o-transition: all 0.4s ease-in-out;
       -webkit-transition: all 0.4s ease-in-out;
       transition: all 0.4s ease-in-out;
@@ -51,7 +51,6 @@
         ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
         background-position: 100% 0;
-        moz-transition: all 0.4s ease-in-out;
         -o-transition: all 0.4s ease-in-out;
         -webkit-transition: all 0.4s ease-in-out;
         transition: all 0.4s ease-in-out;

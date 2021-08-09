@@ -37,7 +37,7 @@ const MainBody = () => {
                 animateIn="fadeInUp"
                 animateOut="fadeOutDown"
               >
-                <div className="card">
+                <div className="card mx-auto my-md-0 mt-5">
                   <div className="image">
                     <img src={ConnectImage} alt="icon" />
                   </div>
@@ -66,7 +66,7 @@ const MainBody = () => {
                 animateIn="fadeInUp"
                 animateOut="fadeOutDown"
               >
-                <div className="card">
+                <div className="card mx-auto my-md-0 my-5">
                   <div className="image">
                     <img src={OptimizeImage} alt="icon" />
                   </div>
@@ -95,7 +95,7 @@ const MainBody = () => {
                 animateIn="fadeInUp"
                 animateOut="fadeOutDown"
               >
-                <div className="card">
+                <div className="card mx-auto my-md-0">
                   <div className="image">
                     <img src={PersonalizeImage} alt="icon" />
                   </div>
